@@ -1,7 +1,7 @@
 const express = require('express');
 const authMiddleWare = require('../middleware/auth');
 const Post = require('../model/Post');
-// const refreshMiddleware = require('../middleware/refresh');
+const refreshMiddleware = require('../middleware/refresh');
 const postRoute = express.Router();
 
 postRoute.get('', async (req, res) => {
@@ -53,7 +53,7 @@ postRoute.get('/:postId', async (req, res) => {
 
 })
 
-postRoute.post('', authMiddleWare, async (req, res) => {
+postRoute.post('', authMiddleWare,refreshMiddleware, async (req, res) => {
 
     try {
         const postData = req.body;
@@ -68,23 +68,26 @@ postRoute.post('', authMiddleWare, async (req, res) => {
         if (savedPost) {
             return res.status(201).json({
                 "status": "Post created",
+                "accessToken" : req.token,
                 "data": savedPost,
                 // authToken :
             })
         }
         res.status(500).json({
-            "status": "failed"
+            "status": "failed",
+            "accessToken" : req.token,
         })
     }
     catch (err) {
         res.status(500).json({
             "status": "failed",
+            "accessToken" : req.token,
             "error": err
         })
     }
 })
 
-postRoute.put('/:postId', authMiddleWare, async (req, res) => {
+postRoute.put('/:postId', authMiddleWare,refreshMiddleware, async (req, res) => {
 
     const postId = req.params.postId;
     try {
@@ -124,7 +127,7 @@ postRoute.put('/:postId', authMiddleWare, async (req, res) => {
     }
 })
 
-postRoute.delete('/:postId', authMiddleWare, async (req, res) => {
+postRoute.delete('/:postId', authMiddleWare,refreshMiddleware, async (req, res) => {
 
     const postId = req.params.postId;
     try {

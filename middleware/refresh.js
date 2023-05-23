@@ -1,17 +1,19 @@
 const jwt = require('jsonwebtoken');
-const User = require('../model/User');
-// const cookieParser = require('cookie-parser');
+// const express
+const UserSchema = require('../model/User');
+const cookieParser = require('cookie-parser');
 
 
 const refreshMiddleware = (req, res, next) => {
-    console.log(req.cookies)
+    // refreshMiddleware.use(cookieParser());
+    // console.log(req)
 
     try {
         const cookies = req.cookies;
         console.log(cookies);
         if (!cookies?.jwt) return res.sendStatus(401);
         const refreshToken = cookies.jwt;
-        const userFound = User.findOne({ refreshToken }).exec();
+        const userFound = UserSchema.findOne({ refreshToken }).exec();
         if (userFound) {
 
             jwt.verify(
@@ -24,15 +26,16 @@ const refreshMiddleware = (req, res, next) => {
                         res.clearCookie('jwt');
                         res.sendStatus(403);
                     }
+                    console.log(decoded)
                     const accessToken = jwt.sign(
                         {
-                            email: decoded.user.email,
-                            id : decoded.user._id
+                            email: decoded.email,
+                            id: decoded._id
                         },
                         process.env.ACCESS_TOKEN_KEY,
                         { expiresIn: "10m" }
                     )
-                    // res.json({accessToken});
+                    req.token = accessToken;
                     next()
                 }
             )
