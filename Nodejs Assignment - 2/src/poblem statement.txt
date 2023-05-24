@@ -1,0 +1,43 @@
+Background
+In Nodejs, there are 3 different ways to take input.
+Command line arguments
+Environment variables
+readLine function
+In this assignment, you will practice how to take input in these ways. We will take a name as input (e.g. Ravi) and print Hello Ravi.
+Instructions
+Create three different files.
+readCommandLineArguments.js
+This file should read a name (e.g. Ravi) as a command line argument and print a greeting Hello Ravi
+readEnvVariable.js
+This file should read a name (e.g. Ravi) through an environment variable called USERNAME and print a greeting Hello Ravi
+readFromLine.js
+This file should read a name (e.g. Ravi) from the user and print a greeting Hello Ravi
+Evaluation
+
+Test case number
+Steps
+Example
+1
+Open command line
+Do cd to the directory where your file is present
+Run the command node readCommandLineArguments.js Ravi
+It should print Hello Ravi on the console
+Repeat it with 2 other names and it should print the correct greeting
+
+2
+Open command line
+Do cd to the directory where your file is present
+Set the environment variable by running the following command
+Windows -  set USERNAME=Ravi
+Unix or Mac - export USERNAME=Ravi
+Run the command node readEnvVariable.js
+It should print Hello Ravi on the console
+Repeat it with 2 other names and it should print the correct greeting
+
+3
+Open command line
+Do cd to the directory where your file is present
+Run the command node readFromLine.js
+It will display a line,
+Please enter your name:
+Give a name/input (e.g. Ravi etc.) which should print Hello Ravi on the console as a greeting.
