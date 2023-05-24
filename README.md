@@ -38,7 +38,7 @@ To run this server locally, you need to have the following software installed on
 Start the server by running the following command:
 
 ```shell
-npm start
+npm run dev
 ```
 
 Once the server is running, you can access the APIs and endpoints at `http://localhost:<port>`, where `<port>` is the value specified in your `.env` file.
