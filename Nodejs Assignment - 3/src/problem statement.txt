@@ -1,0 +1,26 @@
+Background
+The Node.js file system module allows you to work with the file system on your computer.
+To include the File System module, use the require() method.
+
+Instructions
+Create a file called index.html using NodeJS fs module with the content added below 
+
+<h1> Hello World </h1>
+<p> This is {Your Name}... </p>
+
+Create a simple http server using NodeJS and serve this file
+
+
+Evaluation
+
+
+
+Test case number
+Steps
+Example
+1
+Open command line
+Do cd to the directory where your file is present
+Run the command node “File_Name” e.g. node index
+It should create a file index.html with the content provided in the instructions above.
+It should also start a server at the mentioned port (eg. http://localhost:5000/), displaying the content of the index.html file.
