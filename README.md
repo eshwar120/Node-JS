@@ -43,18 +43,6 @@ npm start
 
 Once the server is running, you can access the APIs and endpoints at `http://localhost:<port>`, where `<port>` is the value specified in your `.env` file.
 
-## API Documentation
-
-To understand the available API endpoints and their functionality, please refer to the documentation provided in the `docs` folder of this repository.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or want to enhance this project, feel free to open a pull request or submit an issue with the relevant details.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
-We hope this server built with Node.js, Express.js, JSON Web Token (JWT), MongoDB, and Mongoose proves useful for your web application development needs. Feel free to customize and extend it according to your requirements. If you have any questions or feedback, please don't hesitate to reach out. Happy coding!
+I hope this server built with Node.js, Express.js, JSON Web Token (JWT), MongoDB, and Mongoose proves useful for your web application development needs. Feel free to customize and extend it according to your requirements. If you have any questions or feedback, please don't hesitate to reach out. Happy coding!
