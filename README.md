@@ -40,6 +40,6 @@ To run any of the assignments locally, follow the instructions provided in each 
 
 ## Feedback and Contact
 
-I welcome any feedback, suggestions, or collaboration opportunities. Feel free to reach out to me through email or connect with me on LinkedIn. Let's learn and grow together!
+I welcome any feedback, suggestions, or collaboration opportunities. Feel free to reach out to me through email - eshwaramahendra0120@gmail.com or connect with me on LinkedIn - https://www.linkedin.com/in/neela-eshwaramahendra-376aa921b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3kcbR%2BaDTSukeI66cS4PEQ%3D%3D. Let's learn and grow together!
 
 Happy coding! 🚀
