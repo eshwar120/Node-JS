@@ -1,6 +1,6 @@
-# Assignments Repository
+# Node Js Assignments
 
-This repository contains a collection of my assignments, showcasing my learning journey in web development. I have used JavaScript, Node.js, Express.js, MongoDB, Mongoose, and JSON Web Token (JWT) in these assignments.
+This repository contains a collection of my Node js assignments, showcasing my learning journey in web development. I have used JavaScript, Node.js, Express.js, MongoDB, Mongoose, and JSON Web Token (JWT) in these assignments.
 
 ## Technologies Used
 
